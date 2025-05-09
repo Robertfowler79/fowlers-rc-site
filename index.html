@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fowler's RC Needful Things</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #111;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(45deg, #007bff, #28a745);
+            color: #fff;
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+            font-weight: bold;
+        }
+        header p {
+            font-size: 20px;
+            font-style: italic;
+        }
+        .section {
+            padding: 40px 20px;
+        }
+        h2 {
+            text-align: center;
+            font-size: 32px;
+            color: #28a745;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+        .product {
+            width: 260px;
+            background: #222;
+            border: 2px solid #444;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
+            color: #ddd;
+            text-align: center;
+        }
+        .product:hover {
+            transform: scale(1.05);
+            border-color: #007bff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+        }
+        .product:hover img {
+            transform: scale(1.1);
+        }
+        .product h3 {
+            color: #28a745;
+            font-size: 20px;
+            padding: 10px 0;
+            margin: 0;
+        }
+        .product p {
+            padding: 10px;
+            font-size: 14px;
+            color: #bbb;
+        }
+        .product a {
+            display: block;
+            padding: 12px;
+            background-color: #28a745;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .product a:hover {
+            background-color: #218838;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fowler's RC Needful Things</h1>
+        <p>Your One-Stop Shop for All Things RC (Ages 14+)</p>
+    </header>
+
+    <!-- Featured Products -->
+    <section class="section">
+        <h2>🚗 Featured Premium RC Cars ($400–$600)</h2>
+        <div class="product-container">
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/71Bb0-VPrQL._AC_SL1500_.jpg" alt="Arrma Kraton 6S BLX">
+                <h3>Arrma Kraton 6S BLX 4WD Monster Truck</h3>
+                <p>6S Brushless Power System, 4WD all-terrain, ready-to-run (RTR), durable.</p>
+                <a href="https://www.amazon.com/dp/B07ZKRL1B9" target="_blank">View on Amazon</a>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/71O1BzLpc7L._AC_SL1500_.jpg" alt="Traxxas Slash 4X4">
+                <h3>Traxxas Slash 4X4 Ultimate Short Course Truck</h3>
+                <p>4WD, waterproof electronics, high-speed brushless system, fully assembled.</p>
+                <a href="https://www.amazon.com/dp/B07X6Z7XJ9" target="_blank">View on Amazon</a>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/91b2wZ9P1RL._AC_SL1500_.jpg" alt="Arrma Typhon 6S BLX">
+                <h3>Arrma Typhon 6S BLX 4WD Buggy</h3>
+                <p>Brushless power system, speeds up to 70+ mph, advanced suspension.</p>
+                <a href="https://www.amazon.com/dp/B07XQK6V5C" target="_blank">View on Amazon</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- RC Parts & Upgrades -->
+    <section class="section">
+        <h2>🛠️ RC Parts & Upgrades</h2>
+        <div class="product-container">
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/81OeCjBgl4L._AC_SL1500_.jpg" alt="RC Battery">
+                <h3>Arrma 6S LiPo Battery</h3>
+                <p>High-performance 6S LiPo battery for Arrma RC vehicles.</p>
+                <a href="https://www.amazon.com/dp/B01LXYK4JX" target="_blank">View on Amazon</a>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/91Z+djhEwkL._AC_SL1500_.jpg" alt="RC Motor">
+                <h3>Traxxas Velineon Brushless Motor</h3>
+                <p>Powerful brushless motor for ultimate speed and performance.</p>
+                <a href="https://www.amazon.com/dp/B0044Z1E3I" target="_blank">View on Amazon</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- RC Accessories -->
+    <section class="section">
+        <h2>🔧 RC Accessories & Tools</h2>
+        <div class="product-container">
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/61woIVH5lAL._AC_SL1500_.jpg" alt="RC Charger">
+                <h3>Traxxas EZ-Peak Charger</h3>
+                <p>Smart charger for LiPo and NiMH batteries, easy to use.</p>
+                <a href="https://www.amazon.com/dp/B004H5UFD6" target="_blank">View on Amazon</a>
+            </div>
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/81PaXK9t5rL._AC_SL1500_.jpg" alt="RC Controller">
+                <h3>Traxxas TQi 2.4GHz Transmitter</h3>
+                <p>Precision control with advanced tuning capabilities for your RC vehicles.</p>
+                <a href="https://www.amazon.com/dp/B0044GZ7V6" target="_blank">View on Amazon</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Fowler's RC Needful Things - All Rights Reserved</p>
+    </footer>
+</body>
+</html>
