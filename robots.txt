@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /private/
+Allow: /
+Sitemap: https://robertfowler79.github.io/fowlers-rc-site/sitemap.xml
