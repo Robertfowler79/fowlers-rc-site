@@ -1,111 +1,110 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fowlers RC Needful Things</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0; padding: 0;
-            background: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background: #222;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        .section {
-            padding: 20px;
-        }
-        h2 {
-            color: #444;
-        }
-        .product {
-            background: white;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .product img {
-            width: 100%;
-            max-width: 300px;
-        }
-        .product a {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 10px 15px;
-            background: #0066c0;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .product a:hover {
-            background: #004080;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="High-end RC Cars, Parts & Tools" />
+  <title>Fowler's RC Needful Things</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #333; }
+    header { background: #111; color: #fff; padding: 1em; text-align: center; }
+    nav a { margin: 0 15px; color: #ddd; text-decoration: none; }
+    .hero { background: url('https://example.com/rc-banner.jpg') center/cover no-repeat; padding: 4em 1em; text-align: center; color: white; }
+    .products { display: flex; flex-wrap: wrap; justify-content: center; padding: 2em; }
+    .product { background: white; margin: 1em; padding: 1em; border-radius: 8px; max-width: 300px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    .product img { width: 100%; border-radius: 4px; }
+    .product h3 { margin: 0.5em 0; }
+    .product button { background: #e63946; color: white; border: none; padding: 0.5em 1em; border-radius: 4px; cursor: pointer; }
+    .product video { width: 100%; margin-top: 0.5em; border-radius: 4px; }
+    footer { background: #222; color: #ccc; text-align: center; padding: 1em; margin-top: 2em; }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>Fowler's RC Needful Things</h1>
+    <nav>
+      <a href="#cars">RC Cars</a>
+      <a href="#parts">Parts</a>
+      <a href="#tools">Tools</a>
+    </nav>
+  </header>
 
-<header>
-    <h1>Fowlers RC Needful Things</h1>
-    <p>Top-rated RC Cars, Parts & Upgrades (Ages 14+)</p>
-</header>
+  <section class="hero">
+    <h2>Elite RC Cars, Tools & Parts for Hardcore Hobbyists</h2>
+    <p>Performance gear shipped directly to your bench or bash spot.</p>
+  </section>
 
-<section class="section">
-    <h2>🚗 Ready-to-Run RC Cars</h2>
-
+  <section class="products" id="cars">
     <div class="product">
-        <h3>BEZGAR HP161S 1:16 Brushless RC Truck</h3>
-        <img src="https://m.media-amazon.com/images/I/71HRkUgnS8L._AC_SL1500_.jpg" alt="BEZGAR HP161S">
-        <p>4WD, 68 km/h, metal drivetrain, oil shocks.</p>
-        <a href="https://www.amazon.com/dp/B0BC8PWMHJ" target="_blank">View on Amazon</a>
+      <img src="https://example.com/traxxas-xmaxx.jpg" alt="Traxxas X-Maxx" />
+      <h3>Traxxas X-Maxx 8S</h3>
+      <p>Brute power, 50+ MPH out of the box, and top-tier durability.</p>
+      <video controls>
+        <source src="https://example.com/traxxas-xmaxx-demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <button>Shop Now</button>
     </div>
-
     <div class="product">
-        <h3>AMORIL 1:14 4WD Monster Truck</h3>
-        <img src="https://m.media-amazon.com/images/I/81B2K02q5FL._AC_SL1500_.jpg" alt="AMORIL RC Truck">
-        <p>Brushed, 70 km/h, metal parts, oil shocks.</p>
-        <a href="https://www.amazon.com/dp/B09XMP85Z8" target="_blank">View on Amazon</a>
+      <img src="https://example.com/arrma-infraction.jpg" alt="Arrma Infraction" />
+      <h3>Arrma Infraction 6S</h3>
+      <p>Ultimate street basher with extreme speed and looks.</p>
+      <video controls>
+        <source src="https://example.com/arrma-infraction-demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <button>Shop Now</button>
     </div>
+  </section>
 
+  <section class="products" id="parts">
     <div class="product">
-        <h3>DEERC 1:8 Scale Monster Truck</h3>
-        <img src="https://m.media-amazon.com/images/I/71JKhViHgmL._AC_SL1500_.jpg" alt="DEERC Metal Truck">
-        <p>Large scale, 4WD, metal chassis, all-terrain.</p>
-        <a href="https://www.walmart.com/ip/DEERC-Metal-Car-Large-1-8-Scale-4WD-Monster-Truck/123456789" target="_blank">View on Walmart</a>
+      <img src="https://example.com/cnc-arms.jpg" alt="CNC Upgrade Arms" />
+      <h3>CNC Aluminum Arms</h3>
+      <p>Lightweight, high-strength upgrade for durability & handling.</p>
+      <video controls>
+        <source src="https://example.com/cnc-arms-demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <button>Shop Now</button>
     </div>
-</section>
-
-<section class="section">
-    <h2>🛠️ RC Parts & Upgrades</h2>
-
     <div class="product">
-        <h3>Wltoys 144001/144010 Aluminum Parts Kit</h3>
-        <img src="https://m.media-amazon.com/images/I/71NPRMPNScL._AC_SL1500_.jpg" alt="Wltoys Parts">
-        <p>Aluminum suspension, steering hubs, servo links.</p>
-        <a href="https://viprh.com/products/upgrade-spare-parts-c-seat-steering-for-wltoys-144010-144001-144002-1-14-rc-car" target="_blank">View on VIPRH</a>
+      <img src="https://example.com/lipo-battery.jpg" alt="LiPo Battery" />
+      <h3>6S LiPo 5000mAh</h3>
+      <p>Top-tier power with a smart balance of capacity and output.</p>
+      <video controls>
+        <source src="https://example.com/lipo-battery-demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <button>Shop Now</button>
     </div>
+  </section>
 
+  <section class="products" id="tools">
     <div class="product">
-        <h3>4D Full Truck Upgrade Kit A001</h3>
-        <img src="https://cdn.shopify.com/s/files/1/0266/6276/4597/products/4DUpgradeKit_1200x1200.jpg" alt="4D Kit">
-        <p>Metal chassis and parts for WPL models.</p>
-        <a href="https://www.rcpro.ca/products/4d-full-truck-upgrade-kit?variant=39784778006707" target="_blank">View on RC-PRO</a>
+      <img src="https://example.com/mip-tools.jpg" alt="MIP Hex Driver Set" />
+      <h3>MIP Hex Driver Set</h3>
+      <p>Pro-level precision tools made for serious wrenchers.</p>
+      <video controls>
+        <source src="https://example.com/mip-tools-demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <button>Shop Now</button>
     </div>
-
     <div class="product">
-        <h3>HobbyPark RC Body Clips (Universal)</h3>
-        <img src="https://m.media-amazon.com/images/I/81ezmGB7+lL._AC_SL1500_.jpg" alt="Body Clips">
-        <p>Durable universal clips for all RC car bodies.</p>
-        <a href="https://www.amazon.com/dp/B07XYZ1234" target="_blank">View on Amazon</a>
+      <img src="https://example.com/setup-station.jpg" alt="RC Setup Station" />
+      <h3>RC Setup Station</h3>
+      <p>Camber gauge, toe plate, and ride height tools in one.</p>
+      <video controls>
+        <source src="https://example.com/setup-station-demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <button>Shop Now</button>
     </div>
+  </section>
 
-</section>
-
+  <footer>
+    <p>© 2025 Fowler's RC Needful Things. Built for RC junkies by RC junkies.</p>
+  </footer>
 </body>
 </html>
